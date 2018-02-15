@@ -8,8 +8,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class UDPRegisteryServer {
-    public static final String REGISTRY_SERVER_IP = "128.101.37.120";
-    public static final int REGISTRY_SERVER_PORT = 5104;
+    public static final String REGISTRY_SERVER_IP = "128.101.35.147";
+    public static final int REGISTRY_SERVER_PORT = 5105;
     private static final int BUFF_SIZE = 1024;
     private DatagramSocket sendSocket;
     private DatagramSocket receiveSocket;
