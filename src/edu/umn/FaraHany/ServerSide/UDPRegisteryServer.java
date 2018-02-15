@@ -91,6 +91,9 @@ public class UDPRegisteryServer {
             e.printStackTrace();
         }
         String msg = new String (receivePacket.getData(), 0, receivePacket.getLength());
-        System.out.println("\n\n"+msg);
+        String[] elements = msg.split(";");
+        for (int i = 0; i < elements.length-1; i += 2) {
+            System.out.println("\n" + elements[i] + ":" + elements[i+1]);
+        }
     }
 }
